@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
- 
+
 <html>
 
 <head>
@@ -18,18 +18,20 @@
 	<meta property="og:description" content="Odyssey is the annual cultural festival of HBTU Kanpur, one of the biggest of its kind. The 2017 edition is set to happen from January 27th to 30th. Watchout for spotlight events like crescando, Tarang, Choreo, Dramatics etc. and proshows set to blow you away.">
     <meta property="og:site_name" content="odyssey 2017 | Feb 25th to 27th 2017"/>
 
-   
+
  <!--[if lt IE 9]>
     <script src="/js/html5shiv.js"></script>
   <![endif]-->
 
-
-    <script src="code.jquery.com/jquery-2.2.4.min.js"></script>  
+<!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+-->  <script src="code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
 	<script src="js/angular.min.js"></script>
 
 	<script src="js/app.js"></script>
-	
+
 <script type='text/javascript' src='js/loadImg.js'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -68,8 +70,8 @@
 	z-index: 9999;
 	background: url(imgs/Preloader_3.gif) center no-repeat #ffffff;
 }
-	
-	
+
+
 	body{
 		overflow-x: hidden;
 	}
@@ -96,8 +98,8 @@
   		margin-left: -8px;
 	}
 	/*.about,.gallery,.contact,.spons{
-	background: -webkit-linear-gradient(top,#050a0f 1%, #202428 70%, #0A0A0A 100%);	
-		//	background: url("imgs/new/About_us/back.png") no-repeat center center fixed; 
+	background: -webkit-linear-gradient(top,#050a0f 1%, #202428 70%, #0A0A0A 100%);
+		//	background: url("imgs/new/About_us/back.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,7 +115,7 @@
 <div class="se-pre-con"></div>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
+	<div class="container-fluid" style="padding-left:0;padding-right;">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="index.html" style="margin-left: 40px">ADHYAAY <span class="high1">'18</span></a>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -123,39 +125,61 @@
 				<span class="icon-bar"></span>
 			</button>
 		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
+		<div class="collapse navbar-collapse" id="myNavbar" style="background-color:rgba(0,0,0,0.3) !important;">
 			<ul class="nav navbar-nav hvr-radial-out navbar-right">
-				<li class="hvr-radial-out"><a  href="#home"> <font color="#E8630C">HOME</font></a></li>
-				<li class="hvr-radial-out"><a href="#about"><font color="#FF0000">ABOUT US</font></a></li>
-				<li class="hvr-radial-out"><a href="#gallery"><font color="#FF0000">GALLERY</font></a></li>
-				<li class="hvr-radial-out"><a href="events/events.html" target="_blank"><font color="#FF0000">EVENTS</font></a></li>
-				<li class="hvr-radial-out"><a href="events/events.html" target="_blank"><font color="#FF0000">TECHNICAL</font></a></li>
-				<li class="hvr-radial-out"><a href="litevents.html" target="_blank"><font color="#FF0000">LIT EVENTS</font></a></li>
-				<li class="hvr-radial-out"><a href="register2.html"><font color="#FF0000">REGISTRATION</font></a></li>
-				<li class="hvr-radial-out"><a href="informal.pdf"><font color="#FF0000">INFORMAL EVENTS</font></a></li>
+				<li class="hvr-radial-out"><a  href="#home"> HOME</a></li>
+				<li class="hvr-radial-out"><a href="#about">ABOUT US</a></li>
+				<li class="hvr-radial-out"><a href="#gallery">GALLERY</a></li>
+				<!--<li class="hvr-radial-out"><a href="events/events.html" target="_blank"><font color="#FF0000">EVENTS</font></a></li>
+				<li class="hvr-radial-out"><a href="events/events.html" target="_blank"><font color="#FF0000">TECHNICAL</font></a></li>-->
+        <li class="hvr-radial-out nav-item dropdown patch">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        EVENTS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="left:0;transition:0.5s;padding-top:15px;width:50px;padding-bottom:18px;background-color:rgba(0,0,0,0.4);">
+          <ul>
+            <li><a class="dropdown-item custom_af" href="events/events.html">Cultural</a></li>
+					</ul><hr><ul>
+            <li><a class="dropdown-item custom_af" href="events_tech/events_tech.html">Technical</a></li>
+          </ul>
+        </div>
+      </li>
+
+        <!--  <li class="hvr-radial-out">
+            <a href="#">EVENTS</a>
+            <div style="position:absolute;background-color:#fff;top:45px;left:0;">
+              wehjcbjwbcjwb
+            </div>
+          </li>-->
+
+
+
+				<li class="hvr-radial-out"><a href="litevents.html" target="_blank">LIT EVENTS</a></li>
+				<li class="hvr-radial-out"><a href="register2.html">REGISTRATION</a></li>
+				<li class="hvr-radial-out"><a href="informal.pdf">INFORMAL EVENTS</a></li>
 				<li class="hvr-radial-out"><a href="live/odysseylive.html"><font color="#FF0000">LIVE</font></a></li>
-				<li class="hvr-radial-out" style="margin-right: 150px"><a href="#contact"><font color="#FF0000">CONTACT US</font></a></li>
+				<li class="hvr-radial-out" style="margin-right: 150px"><a href="#contact">CONTACT US</a></li>
 			</ul>
 		</div></div>
 </nav>
 	<div class="section home" id="home" style="height:100vh;overflow:hidden">
 		<img  style="position:absolute;top:-8vh;height:110%;width:100%" src="imgs/new/1_page/frontfinal.jpg">
-		<!img  style="position:relative;top:-8vh;height:55%;width:50%" src="imgs/new/1_page/abc.png">
+		<!--<img  style="position:relative;top:-8vh;height:55%;width:50%" src="imgs/new/1_page/abc.png">-->
 
-	    <img id="light1" style="z-index:1071;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light2" style="z-index:1081;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light3" style="z-index:1061;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light4" style="z-index:1051;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light5" style="z-index:1041;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light6" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light7" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light8" style="z-index:1011;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light9" style="z-index:1021;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light10" style="z-index:1071;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light11" style="z-index:1011;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light12" style="z-index:1021;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light13" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
-	    <img id="light14" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light1" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light2" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light3" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light4" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light5" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light6" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light7" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light8" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light9" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light10" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light11" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light12" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light13" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light14" style="z-index:0;" class="light_images" src="imgs/new/1_page/light_modified.png">
 		<!-- Arrow -->
 	<a href="#about"><img style="z-index:9999;top:96vh;left:49%;width:2%;height:3%" class="home_images scroll hidden-xs hidden-sm" src="imgs/new/1_page/scroll_down_cut_arrow.png"></a>
 		<!-- Mobile Arrow -->
@@ -274,7 +298,7 @@
 			</div>
 		</div>
 
-	
+
 	<br>
 	<!-- Gallery -->
 	<div class="section gallery ng-scope" id="gallery" ng-controller="galleryCtrl">
@@ -441,14 +465,14 @@
 			                        <br>
 			                    </li>
 			                </ul>  </div>
-			          
+
 			        </div>
 			    </div>
 			</div>
 		</div>
 	</div>
 	<br><br><br>
-	
+
 	<!-- Contact us -->
 	<div class="section contact ng-scope" id="contact" ng-controller="contactCtrl" style="margin-top: 50px">
 		<div class="col-md-2 hidden-sm hidden-xs" id="contact_title" style="font-family:&#39; Oswald&#39;, sans-serif;">
@@ -477,39 +501,39 @@
 			</div>
 
 			            <!-- ngRepeat: secretary in secretaries2017 --><div class="col-md-6 col-md-offset-3 ng-scope" ng-repeat="secretary in secretaries2017">
-							
-							
+
+
 			            </div>
 				<div ng-repeat="tab in contacts2017" id="Marketing" class="ng-scope">
-			       
+
 					<div ng-hide="$index===0||$index===1" class="row department">
 						<div class="col-md-6 col-md-offset-3">
 							<h3 class="ng-binding cont1">Secretaries</h3>
 						</div>
 					</div>
 					<div ng-hide="$index===0||$index===1" class="row photos">
-						<!-- ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; true, 'col-md-offset-0':false &amp;&amp; true}" ng-repeat="member in tab.members" class="ng-scope col-md-4 col-md-offset-2">	
+						<!-- ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; true, 'col-md-offset-0':false &amp;&amp; true}" ng-repeat="member in tab.members" class="ng-scope col-md-4 col-md-offset-2">
 							<img ng-src="imgs/core_pics/da.png" class="img-responsive corePic" src="imgs/core_pics/da.png">
 							<div class="text-center">
 								<span class="center ng-binding cont1"><a href="https://www.facebook.com/divyansh.agrawal.54?fref=ts" style="text-decoration:none;color:#cccccc;">Tanul Krishnansh Singh</a></span><br>
 								<span class="ng-binding cont1">Cultural Secretary</span>
 								<br>
-				                
+
 								<span class="ng-binding cont1">+918299461039</span>
 							</div>
-						</div><!-- end ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; false, 'col-md-offset-0':false &amp;&amp; false}" ng-repeat="member in tab.members" class="ng-scope col-md-4">	
+						</div><!-- end ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; false, 'col-md-offset-0':false &amp;&amp; false}" ng-repeat="member in tab.members" class="ng-scope col-md-4">
 							<img ng-src="imgs/core_pics/am.png" class="img-responsive corePic" src="imgs/core_pics/am.png">
 							<div class="text-center">
 								<span class="center ng-binding cont1"><a href="https://www.facebook.com/amardeep.pandey.161?fref=ts" style="text-decoration:none;color:#cccccc;"> Purnam Kushwaha</a></span><br>
 				                <span class="ng-binding cont1">Technical Secretary</span>
 								<br>
-								
+
 								<span class="ng-binding cont1">+919198060475</span>
 							</div>
 						</div><!-- end ngRepeat: member in tab.members -->
-					</div>	
+					</div>
 				</div><!-- end ngRepeat: tab in contacts2017 -->
-				
+
 					<div ng-hide="$index===0||$index===1" class="row photos">
 						<!-- ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; true, 'col-md-offset-0':false &amp;&amp; true}" ng-repeat="member in tab.members" class="ng-scope col-md-4 col-md-offset-2">
 						<img ng-src="imgs/core_pics/vm.png" class="img-responsive corePic" src="imgs/core_pics/vm.png">
@@ -517,7 +541,7 @@
 							<span class="center ng-binding"><a href="https://www.facebook.com/vatsala.mishra.963" style="text-decoration:none;color:#cccccc;">Aman Katara</a></span><br>
 							<span class="ng-binding cont1">Literary Secretary</span>
 								<br>
-								
+
 							<span class="ng-binding cont1">+917317582737</span>
 						</div>
 					</div><!-- end ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; false, 'col-md-offset-0':false &amp;&amp; false}" ng-repeat="member in tab.members" class="ng-scope col-md-4">
