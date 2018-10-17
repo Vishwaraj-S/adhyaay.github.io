@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+ 
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Adhyaay</title>
+
+	<meta name="description" content="Odyssey is the annual cultural festival of HBTU Kanpur, one of the biggest of its kind. The 2017 edition is set to happen from february 25th to 27th. Watchout for spotlight events like canary, raqsaan, primp, halla bol, de musique etc. and heartbeat set to blow you away.">
+  	<meta name="author" content="Odyssey DEVELOPERS 2017">
+    <meta name="keywords" content="odyssey, odyssey 2015, odyssey 2016,odyssey 2017,odyssey 2017 hbtu, odyssey 2017 hbti, hbti, hbtu, hbti kanpur, hbtu kanpur, harcourt butler technical university, harcourt butler technological institute, world cultural fest, udbhav, india, college, students, fest, kanpur, HBTU, biggest festival, university, uttar pradesh, events, mask">
+
+  <!-- Open Graph data -->
+    <meta property="og:title" content="Odyssey 2017 | Annual Cultural Festival of HBTU kanpur Feb 25th to 27th"/>
+    <meta property="og:type" content="entertainment"/>
+	<meta property="og:url" content="index.html" />
+    <meta property="og:image" content="odyssey/imgs/main.jpg"/>
+	<meta property="og:description" content="Odyssey is the annual cultural festival of HBTU Kanpur, one of the biggest of its kind. The 2017 edition is set to happen from January 27th to 30th. Watchout for spotlight events like crescando, Tarang, Choreo, Dramatics etc. and proshows set to blow you away.">
+    <meta property="og:site_name" content="odyssey 2017 | Feb 25th to 27th 2017"/>
+
+   
+ <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+
+
+    <script src="code.jquery.com/jquery-2.2.4.min.js"></script>  
+    <script src="bootstrap/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+
+	<script src="js/app.js"></script>
+	
+<script type='text/javascript' src='js/loadImg.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script type='text/javascript'>
+    $(function(){
+        $('img').imgPreload()
+    })
+	$(window).load(function() {
+	$(".se-pre-con").fadeOut("slow");;
+	});
+
+</script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round|Oswald:700" rel="stylesheet">
+	<!-- font-family: 'Pacifico', cursive; -->
+	<!-- font-family: 'Varela Round', sans-serif;  -->
+	<!-- font-family: 'Oswald', sans-serif; -->
+	<link rel="icon" type="image/png" href="logo.png">
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="css/events.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+	<style type="text/css">
+	.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(imgs/Preloader_3.gif) center no-repeat #ffffff;
+}
+	
+	
+	body{
+		overflow-x: hidden;
+	}
+	.parent
+	{
+  		width: 95vh;
+  		border-bottom: 4px solid grey;
+  		position: relative;
+	}
+	.child {
+		background: -webkit-linear-gradient(top,#050a0f 1%, #202428 70%, #0A0A0A 100%);
+
+  		background: #ffffff;
+  		width: 41px;
+  		height: 40px;
+  		border-radius: 50%;
+  		border:2px solid grey;
+		position: absolute;
+		content:'';
+		top: -18px;
+	}
+	.child {
+  		left: 80%;
+  		margin-left: -8px;
+	}
+	/*.about,.gallery,.contact,.spons{
+	background: -webkit-linear-gradient(top,#050a0f 1%, #202428 70%, #0A0A0A 100%);	
+		//	background: url("imgs/new/About_us/back.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}*/
+	</style>
+
+</head>
+
+<body style="background: -webkit-linear-gradient(top,#050a0f 1%, #202428 70%, #0A0A0A 100%);background: -moz-linear-gradient(top,#050a0f 1%, #202428 70%, #0A0A0A 100%);" ng-app = "myApp">
+
+
+<div class="se-pre-con"></div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html" style="margin-left: 40px">ADHYAAY <span class="high1">'18</span></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav hvr-radial-out navbar-right">
+				<li class="hvr-radial-out"><a  href="#home"> <font color="#E8630C">HOME</font></a></li>
+				<li class="hvr-radial-out"><a href="#about"><font color="#FF0000">ABOUT US</font></a></li>
+				<li class="hvr-radial-out"><a href="#gallery"><font color="#FF0000">GALLERY</font></a></li>
+				<li class="hvr-radial-out"><a href="events/events.html" target="_blank"><font color="#FF0000">EVENTS</font></a></li>
+				<li class="hvr-radial-out"><a href="events/events.html" target="_blank"><font color="#FF0000">TECHNICAL</font></a></li>
+				<li class="hvr-radial-out"><a href="litevents.html" target="_blank"><font color="#FF0000">LIT EVENTS</font></a></li>
+				<li class="hvr-radial-out"><a href="register2.html"><font color="#FF0000">REGISTRATION</font></a></li>
+				<li class="hvr-radial-out"><a href="informal.pdf"><font color="#FF0000">INFORMAL EVENTS</font></a></li>
+				<li class="hvr-radial-out"><a href="live/odysseylive.html"><font color="#FF0000">LIVE</font></a></li>
+				<li class="hvr-radial-out" style="margin-right: 150px"><a href="#contact"><font color="#FF0000">CONTACT US</font></a></li>
+			</ul>
+		</div></div>
+</nav>
+	<div class="section home" id="home" style="height:100vh;overflow:hidden">
+		<img  style="position:absolute;top:-8vh;height:110%;width:100%" src="imgs/new/1_page/frontfinal.jpg">
+		<!img  style="position:relative;top:-8vh;height:55%;width:50%" src="imgs/new/1_page/abc.png">
+
+	    <img id="light1" style="z-index:1071;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light2" style="z-index:1081;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light3" style="z-index:1061;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light4" style="z-index:1051;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light5" style="z-index:1041;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light6" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light7" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light8" style="z-index:1011;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light9" style="z-index:1021;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light10" style="z-index:1071;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light11" style="z-index:1011;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light12" style="z-index:1021;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light13" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+	    <img id="light14" style="z-index:1031;" class="light_images" src="imgs/new/1_page/light_modified.png">
+		<!-- Arrow -->
+	<a href="#about"><img style="z-index:9999;top:96vh;left:49%;width:2%;height:3%" class="home_images scroll hidden-xs hidden-sm" src="imgs/new/1_page/scroll_down_cut_arrow.png"></a>
+		<!-- Mobile Arrow -->
+	<a href="#about"><img style="z-index:9999;top:108vh;left:49%;width:2%;height:1%" class="home_images scroll hidden-md hidden-lg" src="imgs/new/1_page/scroll_down_cut_arrow.png"></a>
+	</div>
+	<!-- About_us -->
+	<div class="about section" id="about" style="margin-top:2%;overflow:hidden">
+		<span class="cloud01">
+			<img src="imgs/new/About_us/clouds/01_new.png">
+		</span>
+		<span class="cloud02">
+			<img src="imgs/new/About_us/clouds/02_new.png">
+		</span>
+		<span class="cloud03">
+			<img src="imgs/new/About_us/clouds/01_new.png" style="width:80%;">
+		</span>
+		<span class="cloud04">
+			<img src="imgs/new/About_us/clouds/04_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud05">
+			<img src="imgs/new/About_us/clouds/05_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud06">
+			<img src="imgs/new/About_us/clouds/06_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud07">
+			<img src="imgs/new/About_us/clouds/07_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud08">
+			<img src="imgs/new/About_us/clouds/08_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud09">
+			<img src="imgs/new/About_us/clouds/09_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud10">
+			<img src="imgs/new/About_us/clouds/10_new.png" style="width: 60%;">
+		</span>
+		<span class="cloud11">
+			<img src="imgs/new/About_us/clouds/11_new.png" style="width: 60%;">
+		</span>
+		<div class="col-md-2 col-xs-2 hidden-sm hidden-xs" id="title">
+			<div class="page_title" style="font-family:&#39; Oswald&#39;, sans-serif;">
+				ABOUT&nbsp;US
+				<div class="parent"><div class="child"></div></div>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-offset-0 col-xs-10 col-xs-offset-1">
+			<div class="row" id="images">
+				<div class="col-md-4 col-xs-4 hidden-xs hidden-sm" id="tree_img">
+					<img class="main-img" src="imgs/new/About_us/feather2.png" style="height:60%;">
+				</div>
+				<div class="col-xs-12 col-md-8" id="pic_img">
+					<div class="img_border"></div>
+					<img class="main-img" src="imgs/new/About_us/2.jpg" style="height: 85%; width:80%;">
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="col-xs-12" id="text">
+				<span style="float:right;font-family: 'Varela Round', sans-serif;color:#cccccc;" class="col-xs-11">
+					Odyssey 2017 - The cultural festival of HBTU-K is being organized during the month of February (25th-27th). It is one of the largest Cultural festivals of India with participation of over 2500 students, in addition to the 10,000 strong student community and 500 non-campus residents from 50 colleges around the country offering an unparalleled competitive environment where they showcase their talent and compete with the best upcoming technocrats in the country in a highly charged and competitive ambience.
+<br>
+<br>The odyssey 2k17 invites you all to show up your skills to refine your extra talents.<br>
+<align align="center">FACE THE STAGE AND RULE THE STAGE..........</align>
+
+				</span>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- Spons -->
+	<!--div class="section spons" id="event" ng-controller="sponsCtrl" style="margin-top:2%;height:110vh;overflow-x:hidden">
+		<div class="col-md-2 hidden-sm hidden-xs" id="spons_title">
+			<div class="page_title" style="font-family:&#39; Oswald&#39;, sans-serif;">
+				&nbsp;EVENTS
+				<div class="parent"><div class="child"></div></div>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-offset-0 col-xs-10 col-xs-offset-1">
+		    	<div class="row">
+		    		<div class="col-md-6 col-sm-6 col-xs-12 left">
+		    			<h1 style="letter-spacing:3px;font-family: 'Oswald', sans-serif;color:#B48C2D;">
+		    			ODYSSEY 2017
+		    			</h1>
+		    		</div>
+					<div class="col-xs-12 col-md-2 col-sm-6  col-md-offset-4 right brochure_link" style="padding:0 3.5% 0 3.5%">
+		    			<a href="register2.html" target="_blank">
+		    				<h4 class="brochure_text" style="color:#e6cf99;">REGISTER</h4>
+						</a>
+		    		</div>
+					<div class="col-md-10 col-md-offset-0 col-xs-10 col-xs-offset-1" style="font-family: 'Varela Round', sans-serif">
+						<div class="row">
+							<div class="col-lg-12 help-text">
+								<h2 class="text-center" style="font-family: 'Oswald', sans-serif;color:#B48C2D;"><b>Formal Events</b></h2>
+							</div>
+						</div>
+						<div style="height:80vh;overflow-y:scroll;overflow-x:hidden;">
+							<div class="ng-scope">
+								<div class="row">
+									<div class="col-md-6 ng-scope">
+									<h3 class="sec-dept text-center ng-binding" style="color:#B48C2D;">Events</h3>
+									<div class="text-center">
+										<span class="ng-binding" style="color:#e6cf99;">Kavi Sammelan</span><br>
+										<span style="color:#e6cf99;">Cultural Night</span><br>
+										<span class="ng-binding" style="color:#e6cf99;">Celebrity Night</span>
+									</div>
+								</div><div class="col-md-6 ng-scope">
+									<h3 class="sec-dept text-center ng-binding" style="color:#B48C2D;">Date &amp; Time</h3>
+									<div class="text-center">
+										<span class="ng-binding" style="color:#cccccc;">27th Jan 7:00 pm</span><br>
+										<span style="color:#cccccc;">28th Jan 7:00 pm</span><br>
+										<span class="ng-binding" style="color:#cccccc;">29th Jan 7:00 pm</span>
+									</div></div></div>
+
+							</div></div></div></div>
+			</div>
+		</div>
+
+	
+	<br>
+	<!-- Gallery -->
+	<div class="section gallery ng-scope" id="gallery" ng-controller="galleryCtrl">
+		<div class="row" style="width:100%;overflow-x:hidden">
+			<div class="col-md-2 hidden-sm hidden-xs" id="gallery_title" style="font-family:&#39; Oswald&#39;, sans-serif;" >
+				<div class="page_title">
+					GALLERY
+					<div class="parent"><div class="child"></div></div>
+				</div>
+			</div>
+			<div class="col-xs-offset-1 col-xs-10 col-md-10 col-md-offset-0" style="height:95vh;overflow:hidden;">
+				<div class="row">
+					<div class="col-xs-12" style="margin-left:20px">
+		    			<h1 style="letter-spacing:3px;font-family: &#39;Oswald&#39;, sans-serif;color:#B48C2D;">ADHYAAY <div class="rw-words rw-words-1">
+							<span>memories...</span>
+							<span>colors...</span>
+							<span>souvenirs...</span>
+							<span>wonders...</span>
+						</div></h1>
+		    		</div>
+				</div>
+				<div id="main_area" style="height:92vh;overflow-y:hidden;overflow-x:hidden">
+			        <div class="row">
+			            <div class="col-xs-12 col-md-11" id="slider-thumbs" style="height:90vh;overflow-y:scroll">
+			                <!-- ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="fancybox thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-0" rel="group" href="imgs/pics/1.jpg">
+			                            <img src="imgs/pics/1.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-1" rel="group" href="imgs/pics/2.jpg">
+			                            <img src="imgs/pics/2.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-2" rel="group" href="imgs/pics/3.jpg">
+			                            <img src="imgs/pics/3.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-3" rel="group" href="imgs/pics/4.jpg">
+			                            <img src="imgs/pics/4.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-4" rel="group" href="imgs/pics/5.jpg">
+			                            <img src="imgs/pics/5.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-5" rel="group" href="imgs/pics/6.jpg">
+			                            <img src="imgs/pics/6.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-6" rel="group" href="imgs/pics/7.jpg">
+			                            <img src="imgs/pics/7.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-7" rel="group" href="imgs/pics/8.jpg">
+			                            <img src="imgs/pics/8.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-19" rel="group" href="imgs/pics/9.jpg">
+			                            <img src="imgs/pics/9.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+							<li class="col-xs-6 col-sm-6 col-md-3">
+								<a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-20" rel="group" href="imgs/pics/10.jpg">
+									<img src="imgs/pics/10.jpg">
+								</a>
+								<br>
+							</li>
+						</ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+							<li class="col-xs-6 col-sm-6 col-md-3">
+								<a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-8" rel="group" href="imgs/pics/11.jpg">
+									<img src="imgs/pics/11.jpg">
+								</a>
+								<br>
+							</li>
+						</ul>
+							<!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-10" rel="group" href="imgs/pics/12.jpg">
+			                            <img src="imgs/pics/12.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                        <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-11" rel="group" href="imgs/pics/13.jpg">
+			                            <img src="imgs/pics/13.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-12" rel="group" href="imgs/pics/14.jpg">
+			                            <img src="imgs/pics/14.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                       <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-13" rel="group" href="imgs/pics/15.jpg">
+			                            <img src="imgs/pics/15.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-14" rel="group" href="imgs/pics/16.jpg">
+			                            <img src="imgs/pics/16.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-15" rel="group" href="imgs/pics/17.jpg">
+			                            <img src="imgs/pics/17.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-16" rel="group" href="imgs/pics/18.jpg">
+			                            <img src="imgs/pics/18.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-17" rel="group" href="imgs/pics/19.jpg">
+			                            <img src="imgs/pics/19.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul><!-- end ngRepeat: pic in pics --><ul class="hide-bullets ng-scope" ng-repeat="pic in pics">
+			                    <li class="col-xs-6 col-sm-6 col-md-3">
+			                         <a class="thumbnail fancybox" ng-mouseover="show($index)" id="carousel-selector-18" rel="group" href="imgs/pics/20.jpg">
+			                            <img src="imgs/pics/20.jpg">
+			                        </a>
+			                        <br>
+			                    </li>
+			                </ul>  </div>
+			          
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	
+	<!-- Contact us -->
+	<div class="section contact ng-scope" id="contact" ng-controller="contactCtrl" style="margin-top: 50px">
+		<div class="col-md-2 hidden-sm hidden-xs" id="contact_title" style="font-family:&#39; Oswald&#39;, sans-serif;">
+			<div class="page_title">
+				CONTACT&nbsp;US
+				<div class="parent"><div class="child"></div></div>
+			</div>
+		</div>
+		<div class="col-md-10 col-md-offset-0 col-xs-10 col-xs-offset-1" style="font-family: 'Varela Round', sans-serif">
+			<div class="row">
+		        <div class="col-lg-12 help-text">
+		            <h2 class="text-center" style="font-family: 'Oswald', sans-serif;color:#B48C2D;"><b>Adhyaay 2018 Team</b></h2>
+		        </div>
+		    </div>
+		    <div style="height:90vh;overflow-y:scroll;overflow-x:hidden;">
+			    <!-- ngRepeat: tab in contacts2017 --><div ng-repeat="tab in contacts2017" id="Secretary, COPA)" class="ng-scope">
+
+				<!-- ngRepeat: secretary in secretaries2017 --><div class="col-md-6 col-md-offset-3 ng-scope" ng-repeat="secretary in secretaries2017">
+				<h3 class="sec-dept text-center ng-binding cont1">Cultural Sub-Council Convenor</h3>
+				<img width="196px" ng-src="imgs/core_pics/sss.png" class="img-responsive corePic" src="imgs/core_pics/sss.png">
+				<div class="text-center">
+					<span class="ng-binding cont1"><a href="#" style="text-decoration:none;color:#cccccc;">Dr. Lalit Kumar</a></span><br>
+					<span><a href="skumar@odyssey17.in" target="_blank" class="ng-binding">skumar@odyssey17.in</a></span><br>
+
+				</div>
+			</div>
+
+			            <!-- ngRepeat: secretary in secretaries2017 --><div class="col-md-6 col-md-offset-3 ng-scope" ng-repeat="secretary in secretaries2017">
+							
+							
+			            </div>
+				<div ng-repeat="tab in contacts2017" id="Marketing" class="ng-scope">
+			       
+					<div ng-hide="$index===0||$index===1" class="row department">
+						<div class="col-md-6 col-md-offset-3">
+							<h3 class="ng-binding cont1">Secretaries</h3>
+						</div>
+					</div>
+					<div ng-hide="$index===0||$index===1" class="row photos">
+						<!-- ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; true, 'col-md-offset-0':false &amp;&amp; true}" ng-repeat="member in tab.members" class="ng-scope col-md-4 col-md-offset-2">	
+							<img ng-src="imgs/core_pics/da.png" class="img-responsive corePic" src="imgs/core_pics/da.png">
+							<div class="text-center">
+								<span class="center ng-binding cont1"><a href="https://www.facebook.com/divyansh.agrawal.54?fref=ts" style="text-decoration:none;color:#cccccc;">Tanul Krishnansh Singh</a></span><br>
+								<span class="ng-binding cont1">Cultural Secretary</span>
+								<br>
+				                
+								<span class="ng-binding cont1">+918299461039</span>
+							</div>
+						</div><!-- end ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; false, 'col-md-offset-0':false &amp;&amp; false}" ng-repeat="member in tab.members" class="ng-scope col-md-4">	
+							<img ng-src="imgs/core_pics/am.png" class="img-responsive corePic" src="imgs/core_pics/am.png">
+							<div class="text-center">
+								<span class="center ng-binding cont1"><a href="https://www.facebook.com/amardeep.pandey.161?fref=ts" style="text-decoration:none;color:#cccccc;"> Purnam Kushwaha</a></span><br>
+				                <span class="ng-binding cont1">Technical Secretary</span>
+								<br>
+								
+								<span class="ng-binding cont1">+919198060475</span>
+							</div>
+						</div><!-- end ngRepeat: member in tab.members -->
+					</div>	
+				</div><!-- end ngRepeat: tab in contacts2017 -->
+				
+					<div ng-hide="$index===0||$index===1" class="row photos">
+						<!-- ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; true, 'col-md-offset-0':false &amp;&amp; true}" ng-repeat="member in tab.members" class="ng-scope col-md-4 col-md-offset-2">
+						<img ng-src="imgs/core_pics/vm.png" class="img-responsive corePic" src="imgs/core_pics/vm.png">
+						<div class="text-center">
+							<span class="center ng-binding"><a href="https://www.facebook.com/vatsala.mishra.963" style="text-decoration:none;color:#cccccc;">Aman Katara</a></span><br>
+							<span class="ng-binding cont1">Literary Secretary</span>
+								<br>
+								
+							<span class="ng-binding cont1">+917317582737</span>
+						</div>
+					</div><!-- end ngRepeat: member in tab.members --><div ng-class="{'col-md-4' : true,'col-md-offset-4':false, 'col-md-offset-2':true &amp;&amp; false, 'col-md-offset-0':false &amp;&amp; false}" ng-repeat="member in tab.members" class="ng-scope col-md-4">
+						<img ng-src="imgs/core_pics/rd.png" class="img-responsive corePic" src="imgs/core_pics/rd.png">
+						<div class="text-center">
+							<span class="center ng-binding"><a href="https://www.facebook.com/profile.php?id=100004497136341" style="text-decoration:none;color:#cccccc;">Vikrant Singh</a></span><br>
+							<span class="ng-binding cont1">Hobby Secretary</span>
+								<br>
+							<span class="ng-binding cont1">+917783920528</span>
+						</div>
+					</div><!-- end ngRepeat: member in tab.members -->
+					</div>
+				</div><!-- end ngRepeat: tab in contacts2017 -->
+				<br>
+<!-- Social Links -->
+<footer class="container" id="locate" style="height: 60vh">
+<div class="row">
+	<div class="col-sm-12 col-sm-offset-0" style="margin-top: 15vh">
+<button class="btn btn-primary btn-block button1" data-toggle="collapse" data-target="#demo">LOCATE&nbsp;US&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-menu-down"></span></button>
+		<div id="demo" class="collapse">
+
+			<div class="iframe">
+				<iframe style="border:5px solid #B48C2D;;height:50vh;width:100%;overflow-y:scroll;overflow-x:scroll" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.7962685496027!2d80.30733351478881!3d26.49450379793191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38438bfa9661%3A0xa632793a3bcf1b33!2sWorkshop%2C+HBTU!5e0!3m2!1sen!2sin!4v1483019346311"></iframe>
+			</div>
+</div>
+</div></div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-xs-offset-4 col-md-offset-5" style="margin-top: 10vh">
+		<!--span class="date" style="position: relative;top:0.3em;text-shadow:0px 0px 5px #888888">25<sup>th</sup> - 27<sup>th</sup> FEBRUARY 2017</span-->
+		<a target="_blank" class="social-icon1" href="https://www.facebook.com/hbtufest2k17/"><img class="social-img" width="40px" height="40px" src="imgs/social/fb1.png"></a>
+		<a target="_blank" class="social-icon2" href="#"><img class="social-img" width="40px" height="40px" src="imgs/social/twitter.png"></a>
+		<a target="_blank" class="social-icon3" href="#"><img class="social-img" width="40px" height="40px" src="imgs/social/instagram.png"></a>
+		<a target="_blank" class="social-icon4" href="https://www.youtube.com/channel/UC6LIEm00fDmq1WXZluXujug"><img class="social-img" width="40px" height="40px" src="imgs/social/youtube3.png"></a>
+
+	</div>
+</div>
+	<div class="row" style="margin-top: 10vh">
+		<h5 class="text-center">For any queries/feedback on the website/online services, please contact us at
+			<a href="mailto:contact@odyssey17.in" target="_blank">contact@odyssey17.in</a>
+		</h5>
+	</div>
+
+</footer>
+<script src="js/smoothscroll.js"></script>
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+</body>
+<style type="text/css">
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+	height:100%;
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #B48C2D;
+  border: 100px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 100px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+	/*for firefox */
+/*Scrollbar*/
+
+/*nav  trans, animation, spons*/
+
+
+</style>
+
+  </html>
